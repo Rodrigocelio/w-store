@@ -4,15 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página teste</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, p {
+            font-family: 'Roboto', sans-serif;
+        }
+        a {
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+        display: flex;
+        padding: 16px;
+        background-color: blueviolet;
+        align-items: center;
+    }
+
+    .child {
+        padding: 16px;
+        background-color: aqua;
+        text-align: center;
+        margin: 8px;
+    }
+
+    .child h2 {
+        margin: 0;
+    }
+
+    .child a {
+        text-decoration: none;
+        color: black;
+    }
+    </style>
     <div>
         <h1>Titulo</h1>
         <p>subtitulo</p>
-        <div style="display: flex; padding: 16px 16px 16px 16px; background-color: blueviolet;">
-            <div style="padding: 16px; max-height: 32px; background-color: aqua;"><p>Texto do link</p></div> 
-           <div style="padding: 16px; background-color: aqua;"> <a href="rodrigocelio.com.br">Website</a></div>
-           <div style="padding: 16px; background-color: aqua;">  <a href="linkedin/in/rodrigocelio.com.br">linkedin</a> </div>
+        <div class="container">
+            <div class="child" style="max-height: 32px;">
+                <h2>Texto do link</h2>
+            </div>
+            <div class="child">
+                <a href="https://rodrigocelio.com.br">Website</a>
+            </div>
+            <div class="child">
+                <a href="https://linkedin/in/rodrigocelio.com.br">LinkedIn</a>
+            </div>
         </div>
     </div>   
     
